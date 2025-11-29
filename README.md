@@ -3,7 +3,7 @@
 > **Zarządzaj energią, nie czasem.**
 > Minimalistyczny planer zadań typu PWA, który pomaga wejść w stan głębokiego skupienia (Flow).
 
-![FlowList Banner](public/icon.png)
+![FlowList Banner](https://flowlist.one/public/icon.png)
 
 ## 📖 O projekcie
 
@@ -12,6 +12,7 @@
 Aplikacja działa w modelu **Local-First / Cloud Sync** – można z niej korzystać jako gość (offline, LocalStorage) lub założyć konto, aby synchronizować dane między urządzeniami (Supabase).
 
 🔗 **Live Demo:** [https://app.flowlist.one](https://app.flowlist.one)
+
 🌐 **Landing Page:** [https://flowlist.one](https://flowlist.one)
 
 ---
