@@ -1,43 +1,57 @@
-# Svelte + Vite
+# ⚡ FlowList
 
-This template should help get you started developing with Svelte in Vite.
+> **Zarządzaj energią, nie czasem.**
+> Minimalistyczny planer zadań typu PWA, który pomaga wejść w stan głębokiego skupienia (Flow).
 
-## Recommended IDE Setup
+![FlowList Banner](public/icon.png)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## 📖 O projekcie
 
-## Need an official Svelte framework?
+**FlowList** to nie jest kolejna zwykła lista to-do. To narzędzie zaprojektowane, aby walczyć z prokrastynacją i paraliżem decyzyjnym. Zamiast planować każdą minutę, użytkownik zarządza swoją **energią**.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+Aplikacja działa w modelu **Local-First / Cloud Sync** – można z niej korzystać jako gość (offline, LocalStorage) lub założyć konto, aby synchronizować dane między urządzeniami (Supabase).
 
-## Technical considerations
+🔗 **Live Demo:** [https://app.flowlist.one](https://app.flowlist.one)
+🌐 **Landing Page:** [https://flowlist.one](https://flowlist.one)
 
-**Why use this over SvelteKit?**
+---
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+## 🔥 Kluczowe Funkcje
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+### 🧠 Zarządzanie Energią
+Zadania nie mają dat (chyba że chcesz), mają "wagę energetyczną":
+* 🟦 **Low Energy:** Małe zadania (np. odpisać na e-mail).
+* 🟩 **Medium Energy:** Standardowa praca.
+* 🟥 **High Energy:** Wymagające projekty.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+### 🍅 Flow Mode (Tryb Skupienia)
+Specjalny tryb, który odcina rozpraszacze:
+* Wbudowany **Timer Pomodoro** (25m / 5m).
+* **Soundscapes:** Generator szumów w tle (Deszcz, Kawiarnia, Ogień, Fale).
+* **Screen Wake Lock:** Blokada wygaszania ekranu na telefonie podczas pracy.
 
-**Why include `.vscode/extensions.json`?**
+### ✨ AI Breakdown
+Integracja z **OpenAI**. Jeśli zadanie jest zbyt duże i przytłaczające (oznaczone kolorem czerwonym), jedno kliknięcie "Rozbij z AI" dzieli je na 3-5 małych, wykonalnych kroków.
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+### 🔄 Rutyny (Nawyki)
+System definiowania folderów z nawykami (np. "Poranny Rozruch"). Aplikacja automatycznie dodaje zestaw zadań do listy w wybrane dni tygodnia.
 
-**Why enable `checkJs` in the JS template?**
+### 📱 PWA & Offline First
+* Aplikacja jest instalowalna na telefonie (Progressive Web App).
+* Działa w trybie **Gościa** (zapis w `localStorage`).
+* Po zalogowaniu synchronizuje dane z chmurą (**Supabase**).
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+---
 
-**Why is HMR not preserving my local component state?**
+## 🛠️ Tech Stack
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+* **Frontend:** [Svelte](https://svelte.dev/) + [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Backend / DB:** [Supabase](https://supabase.com/) (PostgreSQL + Auth)
+* **AI:** OpenAI API (przez Vercel Serverless Functions)
+* **Deployment:** [Vercel](https://vercel.com/)
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+---
 
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+📄 Licencja
+Projekt stworzony przez [Krystian Welcel](htttps://hsr.in.net). Wszelkie prawa zastrzeżone. Kontakt: haser88@gmail.com
