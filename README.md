@@ -54,4 +54,5 @@ System definiowania folderów z nawykami (np. "Poranny Rozruch"). Aplikacja auto
 ---
 
 📄 Licencja
+
 Projekt stworzony przez [Krystian Welcel](htttps://hsr.in.net). Wszelkie prawa zastrzeżone. Kontakt: haser88@gmail.com
