@@ -3,7 +3,7 @@
 > **Zarządzaj energią, nie czasem.**
 > Minimalistyczny planer zadań typu PWA, który pomaga wejść w stan głębokiego skupienia (Flow).
 
-![FlowList Banner](https://flowlist.one/public/icon.png)
+[FlowList logo](https://i.ibb.co/chPk7d3Y/icon.png)
 
 ## 📖 O projekcie
 
