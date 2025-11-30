@@ -11,7 +11,7 @@
 
 Aplikacja działa w modelu **Local-First / Cloud Sync** – można z niej korzystać jako gość (offline, LocalStorage) lub założyć konto, aby synchronizować dane między urządzeniami (Supabase).
 
-🔗 **Live Demo:** [https://app.flowlist.one](https://app.flowlist.one)
+🔗 **Aplikacja:** [https://app.flowlist.one](https://app.flowlist.one)
 
 🌐 **Landing Page:** [https://flowlist.one](https://flowlist.one)
 
